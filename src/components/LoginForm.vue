@@ -24,6 +24,7 @@
 import axios from "axios";
 
 export default {
+  emits: ["redirectToChatRoom"],
   data() {
     return {
       email: "",
@@ -42,6 +43,9 @@ export default {
         });
         if (!res) {
           throw new Error("ログインができませんでした");
+        }
+        if (!this.error) {
+          this.$emit("redirectToChatRoom");
         }
         console.log(res);
         return res;
