@@ -1,5 +1,15 @@
 <template>
-  <div class="chat-window">{{ messages }}</div>
+  <div class="chat-window">
+    <div v-if="messages" class="messages">
+      <ul v-for="message in messages" :key="message.id">
+        <li>
+          <span class="name">{{ message.name }}</span>
+          <span class="message">{{ message.content }}</span>
+          <span class="created-at">{{ message.created_at }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script>
