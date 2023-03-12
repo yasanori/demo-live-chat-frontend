@@ -27,6 +27,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@vitejs/plugin-vue", "virtual:d0d5145956efb1f244998952b331fe99890060e87500b85dfa08c3f6bf73e392b8c990bb4f1d5cb61ad77d73cd240aab2165f3c060dcde4141b8daea7c0c021a#npm:4.0.0"],\
+          ["actioncable", "npm:5.2.8-1"],\
           ["axios", "npm:1.3.4"],\
           ["vite", "virtual:d0d5145956efb1f244998952b331fe99890060e87500b85dfa08c3f6bf73e392b8c990bb4f1d5cb61ad77d73cd240aab2165f3c060dcde4141b8daea7c0c021a#npm:4.1.4"],\
           ["vue", "npm:3.2.47"],\
@@ -492,6 +493,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["actioncable", [\
+      ["npm:5.2.8-1", {\
+        "packageLocation": "../../../../.yarn/berry/cache/actioncable-npm-5.2.8-1-7fb7f7a58d-9.zip/node_modules/actioncable/",\
+        "packageDependencies": [\
+          ["actioncable", "npm:5.2.8-1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["agent-base", [\
       ["npm:6.0.2", {\
         "packageLocation": "../../../../.yarn/berry/cache/agent-base-npm-6.0.2-428f325a93-9.zip/node_modules/agent-base/",\
@@ -741,6 +751,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["demo-live-chat-frontend", "workspace:."],\
           ["@vitejs/plugin-vue", "virtual:d0d5145956efb1f244998952b331fe99890060e87500b85dfa08c3f6bf73e392b8c990bb4f1d5cb61ad77d73cd240aab2165f3c060dcde4141b8daea7c0c021a#npm:4.0.0"],\
+          ["actioncable", "npm:5.2.8-1"],\
           ["axios", "npm:1.3.4"],\
           ["vite", "virtual:d0d5145956efb1f244998952b331fe99890060e87500b85dfa08c3f6bf73e392b8c990bb4f1d5cb61ad77d73cd240aab2165f3c060dcde4141b8daea7c0c021a#npm:4.1.4"],\
           ["vue", "npm:3.2.47"],\
