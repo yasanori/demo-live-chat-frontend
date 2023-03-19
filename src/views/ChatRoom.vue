@@ -2,7 +2,7 @@
   <div class="container">
     <Navbar />
     <ChatWindow :messages="messages" />
-    <NewChatForm />
+    <NewChatForm @connectCable="connectCable" />
   </div>
 </template>
 
@@ -21,7 +21,7 @@ export default {
   methods: {
     async getMessage() {
       try {
-        const res = axios.get("http://localhost:3000/messages", {
+        const res = await axios.get("http://localhost:3000/messages", {
           headers: {
             uid: window.localStorage.getItem("uid"),
             "access-token": window.localStorage.getItem("access-token"),
@@ -36,14 +36,20 @@ export default {
         console.log(error);
       }
     },
+    connectCable(message) {
+      this.messageChannel.perform("receive", {
+        message: message,
+        email: window.localStorage.getItem("uid"),
+      });
+    },
   },
   mounted() {
     const cable = ActionCable.createConsumer("ws://localhost:3000/cable");
     this.messageChannel = cable.subscriptions.create("RoomChannel", {
       connected: () => {
-        this.getMessages();
+        this.getMessage();
       },
-      received: () => this.getMessages(),
+      received: () => this.getMessage(),
     });
     this.getMessage();
   },
