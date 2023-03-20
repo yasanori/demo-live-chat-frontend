@@ -9,7 +9,10 @@
           }"
         >
           <span class="name">{{ message.name }}</span>
-          <span class="message">{{ message.content }}</span>
+          <div class="message" @dblclick="createLike(message.id)">
+            {{ message.content }}
+            {{ message.likes.length }}
+          </div>
           <span class="created-at">{{ message.created_at }}</span>
         </li>
       </ul>
@@ -18,12 +21,37 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   props: ["messages"],
   data() {
     return {
       uid: localStorage.getItem("uid"),
     };
+  },
+  methods: {
+    async createLike(messageId) {
+      try {
+        const res = await axios.post(
+          `http://localhost:3000/messages/${messageId}/likes`,
+          {},
+          {
+            headers: {
+              uid: this.uid,
+              "access-token": window.localStorage.getItem("access-token"),
+              client: window.localStorage.getItem("client"),
+            },
+          }
+        );
+
+        if (!res) {
+          new Error("いいねできませんでした");
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    },
   },
 };
 </script>
