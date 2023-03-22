@@ -32,6 +32,7 @@ const RAW_RUNTIME_STATE =
           ["@vitejs/plugin-vue", "virtual:d0d5145956efb1f244998952b331fe99890060e87500b85dfa08c3f6bf73e392b8c990bb4f1d5cb61ad77d73cd240aab2165f3c060dcde4141b8daea7c0c021a#npm:4.0.0"],\
           ["actioncable", "npm:5.2.8-1"],\
           ["axios", "npm:1.3.4"],\
+          ["date-fns", "npm:2.29.3"],\
           ["vite", "virtual:d0d5145956efb1f244998952b331fe99890060e87500b85dfa08c3f6bf73e392b8c990bb4f1d5cb61ad77d73cd240aab2165f3c060dcde4141b8daea7c0c021a#npm:4.1.4"],\
           ["vue", "npm:3.2.47"],\
           ["vue-axios", "virtual:d0d5145956efb1f244998952b331fe99890060e87500b85dfa08c3f6bf73e392b8c990bb4f1d5cb61ad77d73cd240aab2165f3c060dcde4141b8daea7c0c021a#npm:3.5.2"],\
@@ -762,6 +763,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["date-fns", [\
+      ["npm:2.29.3", {\
+        "packageLocation": "../../../../.yarn/berry/cache/date-fns-npm-2.29.3-fef7e3c72c-9.zip/node_modules/date-fns/",\
+        "packageDependencies": [\
+          ["date-fns", "npm:2.29.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["debug", [\
       ["npm:4.3.4", {\
         "packageLocation": "../../../../.yarn/berry/cache/debug-npm-4.3.4-4513954577-9.zip/node_modules/debug/",\
@@ -814,6 +824,7 @@ const RAW_RUNTIME_STATE =
           ["@vitejs/plugin-vue", "virtual:d0d5145956efb1f244998952b331fe99890060e87500b85dfa08c3f6bf73e392b8c990bb4f1d5cb61ad77d73cd240aab2165f3c060dcde4141b8daea7c0c021a#npm:4.0.0"],\
           ["actioncable", "npm:5.2.8-1"],\
           ["axios", "npm:1.3.4"],\
+          ["date-fns", "npm:2.29.3"],\
           ["vite", "virtual:d0d5145956efb1f244998952b331fe99890060e87500b85dfa08c3f6bf73e392b8c990bb4f1d5cb61ad77d73cd240aab2165f3c060dcde4141b8daea7c0c021a#npm:4.1.4"],\
           ["vue", "npm:3.2.47"],\
           ["vue-axios", "virtual:d0d5145956efb1f244998952b331fe99890060e87500b85dfa08c3f6bf73e392b8c990bb4f1d5cb61ad77d73cd240aab2165f3c060dcde4141b8daea7c0c021a#npm:3.5.2"],\
