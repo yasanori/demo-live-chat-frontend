@@ -26,6 +26,9 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@fortawesome/fontawesome-svg-core", "npm:6.3.0"],\
+          ["@fortawesome/free-solid-svg-icons", "npm:6.3.0"],\
+          ["@fortawesome/vue-fontawesome", "virtual:d0d5145956efb1f244998952b331fe99890060e87500b85dfa08c3f6bf73e392b8c990bb4f1d5cb61ad77d73cd240aab2165f3c060dcde4141b8daea7c0c021a#npm:3.0.0-5"],\
           ["@vitejs/plugin-vue", "virtual:d0d5145956efb1f244998952b331fe99890060e87500b85dfa08c3f6bf73e392b8c990bb4f1d5cb61ad77d73cd240aab2165f3c060dcde4141b8daea7c0c021a#npm:4.0.0"],\
           ["actioncable", "npm:5.2.8-1"],\
           ["axios", "npm:1.3.4"],\
@@ -271,6 +274,61 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/unplugged/@esbuild-win32-x64-npm-0.16.17-25af261435/node_modules/@esbuild/win32-x64/",\
         "packageDependencies": [\
           ["@esbuild/win32-x64", "npm:0.16.17"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@fortawesome/fontawesome-common-types", [\
+      ["npm:6.3.0", {\
+        "packageLocation": "./.yarn/unplugged/@fortawesome-fontawesome-common-types-npm-6.3.0-eacaac4a37/node_modules/@fortawesome/fontawesome-common-types/",\
+        "packageDependencies": [\
+          ["@fortawesome/fontawesome-common-types", "npm:6.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@fortawesome/fontawesome-svg-core", [\
+      ["npm:6.3.0", {\
+        "packageLocation": "./.yarn/unplugged/@fortawesome-fontawesome-svg-core-npm-6.3.0-b7e80baff5/node_modules/@fortawesome/fontawesome-svg-core/",\
+        "packageDependencies": [\
+          ["@fortawesome/fontawesome-svg-core", "npm:6.3.0"],\
+          ["@fortawesome/fontawesome-common-types", "npm:6.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@fortawesome/free-solid-svg-icons", [\
+      ["npm:6.3.0", {\
+        "packageLocation": "./.yarn/unplugged/@fortawesome-free-solid-svg-icons-npm-6.3.0-b7a91b016c/node_modules/@fortawesome/free-solid-svg-icons/",\
+        "packageDependencies": [\
+          ["@fortawesome/free-solid-svg-icons", "npm:6.3.0"],\
+          ["@fortawesome/fontawesome-common-types", "npm:6.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@fortawesome/vue-fontawesome", [\
+      ["npm:3.0.0-5", {\
+        "packageLocation": "../../../../.yarn/berry/cache/@fortawesome-vue-fontawesome-npm-3.0.0-5-eeffe757ba-9.zip/node_modules/@fortawesome/vue-fontawesome/",\
+        "packageDependencies": [\
+          ["@fortawesome/vue-fontawesome", "npm:3.0.0-5"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:d0d5145956efb1f244998952b331fe99890060e87500b85dfa08c3f6bf73e392b8c990bb4f1d5cb61ad77d73cd240aab2165f3c060dcde4141b8daea7c0c021a#npm:3.0.0-5", {\
+        "packageLocation": "./.yarn/__virtual__/@fortawesome-vue-fontawesome-virtual-81d8f8bd8f/5/.yarn/berry/cache/@fortawesome-vue-fontawesome-npm-3.0.0-5-eeffe757ba-9.zip/node_modules/@fortawesome/vue-fontawesome/",\
+        "packageDependencies": [\
+          ["@fortawesome/vue-fontawesome", "virtual:d0d5145956efb1f244998952b331fe99890060e87500b85dfa08c3f6bf73e392b8c990bb4f1d5cb61ad77d73cd240aab2165f3c060dcde4141b8daea7c0c021a#npm:3.0.0-5"],\
+          ["@fortawesome/fontawesome-svg-core", "npm:6.3.0"],\
+          ["@types/fortawesome__fontawesome-svg-core", null],\
+          ["@types/vue", null],\
+          ["vue", "npm:3.2.47"]\
+        ],\
+        "packagePeers": [\
+          "@fortawesome/fontawesome-svg-core",\
+          "@types/fortawesome__fontawesome-svg-core",\
+          "@types/vue",\
+          "vue"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -750,6 +808,9 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["demo-live-chat-frontend", "workspace:."],\
+          ["@fortawesome/fontawesome-svg-core", "npm:6.3.0"],\
+          ["@fortawesome/free-solid-svg-icons", "npm:6.3.0"],\
+          ["@fortawesome/vue-fontawesome", "virtual:d0d5145956efb1f244998952b331fe99890060e87500b85dfa08c3f6bf73e392b8c990bb4f1d5cb61ad77d73cd240aab2165f3c060dcde4141b8daea7c0c021a#npm:3.0.0-5"],\
           ["@vitejs/plugin-vue", "virtual:d0d5145956efb1f244998952b331fe99890060e87500b85dfa08c3f6bf73e392b8c990bb4f1d5cb61ad77d73cd240aab2165f3c060dcde4141b8daea7c0c021a#npm:4.0.0"],\
           ["actioncable", "npm:5.2.8-1"],\
           ["axios", "npm:1.3.4"],\
