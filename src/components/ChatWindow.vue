@@ -11,7 +11,10 @@
           <span class="name">{{ message.name }}</span>
           <div class="message" @dblclick="createLike(message.id)">
             {{ message.content }}
-            {{ message.likes.length }}
+            <div v-if="message.likes.length > 0" class="heart-container">
+              <font-awesome-icon icon="heart" class="heart" />
+              <span class="heart-count">{{ message.likes.length }}</span>
+            </div>
           </div>
           <span class="created-at">{{ message.created_at }}</span>
         </li>
@@ -24,6 +27,7 @@
 import axios from "axios";
 
 export default {
+  emits: ["connectCable"],
   props: ["messages"],
   data() {
     return {
@@ -48,6 +52,7 @@ export default {
         if (!res) {
           new Error("いいねできませんでした");
         }
+        this.$emit("connectCable");
       } catch (error) {
         console.log(error);
       }
@@ -110,5 +115,41 @@ ul li {
 .messages {
   max-height: 400px;
   overflow: auto;
+}
+
+.message {
+  position: relative;
+}
+
+.heart-container {
+  background: white;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 30px;
+  min-width: 25px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(245, 245, 245);
+  padding: 1px 2px;
+  z-index: 2;
+  bottom: -7px;
+  right: 0px;
+  font-size: 9px;
+}
+.heart {
+  color: rgb(236, 29, 29);
+}
+.heart-count {
+  color: rgb(20, 19, 19);
+}
+
+.received .message::selection {
+  background: #eee;
+}
+
+.sent .message::selection {
+  background: #677bb4;
 }
 </style>
